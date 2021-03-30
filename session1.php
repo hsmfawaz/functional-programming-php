@@ -31,5 +31,6 @@ foreach ($numbers as $number) {
 
 //Declarative
 println('Declarative Programming');
-$transformed = array_map('subtractTen', array_map('square', array_map('addOne', $numbers)));
-array_filter($transformed, 'println');
+$transformed = array_filter(array_map('square', array_map('addOne', $numbers)), fn ($x) => $x < 70);
+sort($transformed);
+array_filter(array_slice(array_map('subtractTen', $transformed), 0, 2), 'println');
