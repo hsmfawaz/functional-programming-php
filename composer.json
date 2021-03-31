@@ -1,0 +1,12 @@
+{
+    "name": "hsmfawaz/php-function-programming",
+    "require": {
+        "illuminate/collections": "^8.35"
+    },
+    "authors": [
+        {
+            "name": "hsmfawaz2",
+            "email": "hsm.fawaz@gmail.com"
+        }
+    ]
+}
